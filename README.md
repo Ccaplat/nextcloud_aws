@@ -9,7 +9,7 @@ In this project I am going to deploy a nextcloud application in AWS using Terraf
 
 1. Creating our terraform architecture and code
 
-Our Vpc.tf:  has two public and two private subnets and is name nextcloud
+Our Vpc.tf: has two public and two private subnets and is name nextcloud
 securitygroup.tf : allows port 443 and 22 for htpps and ssh
 s3.tf : we are going to create a a bucket that will store nextcloud files
 
