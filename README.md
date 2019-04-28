@@ -1,4 +1,6 @@
 # nextcloud_aws
+Please se raw data 
+
 Learning by doing.
 In my journey to learn AWS and automation 
  How to deploy nextcloud in AWS using terraform.
