@@ -77,6 +77,6 @@ Cloudwatch will send you an alert if the cpu uses more than 80 percent
        
  Our instance is configured correctly, logout from our instance and do a terraform destroy to completely delete our infrastructure. You will need to remove the termination protection of the instance and removing the s3 file if you wish to do so.
 
-In part 2 I will deploy nextcloud using docker
+
 
  
