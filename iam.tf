@@ -1,3 +1,4 @@
+#This role is used to connect Nextcloud to S3 bucket.
 resource "aws_iam_user" "nextclouduser" {
   name = "nextcloud-user"
 }
@@ -42,7 +43,7 @@ resource "aws_iam_group" "nextcloudgroup" {
 }
 EOF
 }
-
+# Attaching the various groups and roles to one name
  resource "aws_iam_policy_attachment" "nextcloud-attachment" {
    name       = "nextcloud-attachment"
    users      = ["${aws_iam_user.nextclouduser.name}"]
