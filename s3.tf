@@ -1,7 +1,7 @@
 resource "aws_s3_bucket" "nextcloudbucket" {
   bucket = "nextcloudtestbucket1112222"
   acl = "private"
-
+### You can add versioning and or lifecycle rule to this bucket  by uncommenting
 
   versioning {
     enabled = true
