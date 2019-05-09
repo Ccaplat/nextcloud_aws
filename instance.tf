@@ -4,15 +4,15 @@ resource "aws_instance" "nextcloud" {
   # Giving ec2 role to read and write on s3 bucket
   iam_instance_profile = "${aws_iam_instance_profile.nexcloud-ec2-profile.name}"
   subnet_id = "${aws_subnet.nextcloud-public-1.id}"
-
+ # Assigning the to security group
   vpc_security_group_ids = ["${aws_security_group.nextcloud-security.id}"]
-
+ # assigning key to instance
   key_name = "${aws_key_pair.nextkey.id}"
   instance_initiated_shutdown_behavior = "stop"
   root_block_device ={
     volume_type = "gp2"
     volume_size = 20
-    delete_on_termination = "false"
+    delete_on_termination = "false" # if you want terraform to destroy instances comment this line
     }
 
   tags {
