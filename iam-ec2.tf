@@ -1,3 +1,4 @@
+# creating the ec2 role, this will be used to connect our NExtcloud to S3 bucket
 resource "aws_iam_role" "nexcloud_ec2_role" {
   name = "nexcloud-ec2-role"
   assume_role_policy = <<EOF
